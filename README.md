@@ -212,7 +212,7 @@ gbg-teamrag/
 
 ## 👥 Team
 
-**GBG-Group5-DataCopilot** — Built with 🤝 collaboration
+**GBG-Group5-TeamRAG** — Built with 🤝 collaboration
 
 | Name |
 |------|
