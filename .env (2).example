@@ -1,0 +1,14 @@
+# Blob Storage
+BLOB_CONNECTION_STRING=DefaultEndpointsProtocol=https;AccountName=gbgacademyai5;AccountKey=###==;EndpointSuffix=##
+BLOB_CONTAINER_NAME=countainer1
+
+# Azure Search
+SEARCH_ENDPOINT=https://gbgacademyai5.search.windows.net
+SEARCH_KEY=####
+INDEX_NAME=cv-index
+
+# Azure OpenAI
+AZURE_OPENAI_ENDPOINT=https://gbgacademy-genai5.openai.azure.com/
+AZURE_OPENAI_KEY=###
+AZURE_OPENAI_EMBEDDING_DEPLOYMENT=text-embedding-3-small
+AZURE_OPENAI_API_VERSION=2024-12-01-preview
