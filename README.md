@@ -1,22 +1,29 @@
 <div align="center">
+
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&duration=3000&pause=1000&color=FF6B35&center=true&vCenter=true&width=700&lines=GBG+TeamRAG+%F0%9F%A7%A0;Chat+with+Your+Documents;PDF+%E2%86%92+Intelligent+Answers;Azure+Powered+RAG+Pipeline" alt="Typing SVG" />
-<br/>
-Show Image
-Show Image
-Show Image
-Show Image
-Show Image
-<br/>
-
-Ask questions about your PDF documents in plain language — no manual search required.
-GBG TeamRAG ingests PDFs from Azure Blob Storage, indexes them with vector search,
-and retrieves the most relevant chunks to answer any question intelligently.
 
 <br/>
-Show Image
-Show Image
-Show Image
+
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Azure OpenAI](https://img.shields.io/badge/Azure_OpenAI-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white)
+![Azure Blob](https://img.shields.io/badge/Azure_Blob_Storage-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white)
+![Azure Search](https://img.shields.io/badge/Azure_AI_Search-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white)
+![HNSW](https://img.shields.io/badge/HNSW-Vector__Index-FF6B35?style=for-the-badge)
+
+<br/>
+
+> Ask questions about your PDF documents in plain language — no manual search required.  
+> GBG TeamRAG ingests PDFs from Azure Blob Storage, indexes them with vector search,  
+> and retrieves the most relevant chunks to answer any question intelligently.
+
+<br/>
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Active_Development-blue?style=flat-square)]()
+[![Pipeline](https://img.shields.io/badge/Pipeline-Ingest_%E2%86%92_Embed_%E2%86%92_Search-success?style=flat-square)]()
+
 </div>
+
 ---
 
 ## 📋 Table of Contents
