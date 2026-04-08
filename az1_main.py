@@ -104,6 +104,7 @@ def create_index():
         SimpleField(name="id", type=SearchFieldDataType.String, key=True),
         SearchableField(name="chunk", type=SearchFieldDataType.String),
         SearchableField(name="title", type=SearchFieldDataType.String),
+        SimpleField(name="url", type=SearchFieldDataType.String),  
 
         SearchField(
             name="vector",
@@ -137,6 +138,7 @@ def load_pdfs_from_blob():
             print(f"Downloading {blob.name}")
 
             blob_client = container.get_blob_client(blob)
+            blob_url = blob_client.url  
 
             with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as temp:
                 temp.write(blob_client.download_blob().readall())
@@ -144,7 +146,6 @@ def load_pdfs_from_blob():
 
             text = read_pdf(temp_path)
             chunks = chunk_text(text)
-
             vectors = get_embeddings(chunks)
 
             for i, chunk in enumerate(chunks):
@@ -152,6 +153,7 @@ def load_pdfs_from_blob():
                     "id": str(uuid.uuid4()),
                     "chunk": chunk,
                     "title": blob.name,
+                    "url": blob_url,  
                     "vector": vectors[i]
                 })
 
@@ -196,8 +198,9 @@ def search(query):
 
     for r in results:
         print("\n---")
-        print(r["title"])
-        print(r["chunk"][:200])
+        print("File:", r["title"])
+        print("URL:", r["url"])  # ✅ PRINT URL
+        print("Text:", r["chunk"][:200])
 
 # =========================
 # MAIN
