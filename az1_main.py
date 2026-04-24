@@ -31,7 +31,7 @@ def get_env(name):
         raise ValueError(f"Missing ENV: {name}")
     return value
 
-# ENV
+# ENV (with your ones)
 BLOB_CONNECTION_STRING = get_env("BLOB_CONNECTION_STRING")
 BLOB_CONTAINER_NAME = get_env("BLOB_CONTAINER_NAME")
 
